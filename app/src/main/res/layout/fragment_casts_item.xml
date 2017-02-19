@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="320px"
+    android:layout_height="420px"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginBottom="10dp"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/touch_bg"
+        android:clickable="true"
+        android:focusable="true"
+        >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_img"
+            android:layout_width="match_parent"
+            android:layout_height="360px" />
+
+        <TextView
+            android:id="@+id/tv_casts_name"
+            android:layout_below="@+id/sdv_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textSize_info"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

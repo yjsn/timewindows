@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.singgo.cn.timewindows.widget.MySwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sw_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.singgo.cn.timewindows.widget.MyScrollView
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardPreventCornerOverlap="true"
+                app:contentPadding="5dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/textSize_info"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_gender"
+                        android:layout_below="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/textSize_info"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_name_en"
+                        android:layout_below="@+id/tv_gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/textSize_info"
+                        />
+                    <TextView
+                        android:id="@+id/tv_aka"
+                        android:layout_below="@+id/tv_name_en"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/textSize_info"
+                        />
+                    <TextView
+                        android:id="@+id/tv_aka_en"
+                        android:layout_below="@+id/tv_aka"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/textSize_info"
+                        />
+                    <TextView
+                        android:id="@+id/tv_born"
+                        android:layout_below="@+id/tv_aka_en"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/textSize_info"
+                        />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="相关作品"
+                style="@style/textSize_info"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <com.singgo.cn.timewindows.widget.CenterViewPager
+                android:id="@+id/cv_viewpager"
+                android:layout_width="680px"
+                android:layout_height="750px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                >
+
+            </com.singgo.cn.timewindows.widget.CenterViewPager>
+
+        </LinearLayout>
+    </com.singgo.cn.timewindows.widget.MyScrollView>
+</com.singgo.cn.timewindows.widget.MySwipeRefreshLayout>

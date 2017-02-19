@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/touch_bg"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="10dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        >
+    
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/information_title"
+        />
+    
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_img_pre"
+        android:layout_width="match_parent"
+        android:layout_height="250px"
+        android:visibility="gone"
+        android:scaleType="centerCrop"
+        />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_author"
+        android:layout_below="@+id/rl_content"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/information_desc"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_below="@+id/rl_content"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/information_desc"
+        />
+
+</RelativeLayout>

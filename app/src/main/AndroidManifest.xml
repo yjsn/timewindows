@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.singgo.cn.timewindows">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".app.AppContext"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.MainActivity"
+            android:theme="@style/translucent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.SimpleBackActivity" />
+        <activity android:name=".ui.ImgSimpleBackActivity" />
+        <!-- <activity android:name=".ui.ToolBarImageActivity"></activity> -->
+
+        <activity android:name=".ui.LoginActivity" />
+        <activity
+            android:name=".ui.PlayerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.BigImgViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ViewBigPicTheme" />
+        <activity
+            android:name=".ui.webview.WebViewActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="design_width"
+            android:value="768" />
+        <meta-data
+            android:name="design_height"
+            android:value="1280" />
+
+        <activity
+            android:name=".ui.AboutActivity"
+            android:label="@string/title_activity_about"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+
+</manifest>

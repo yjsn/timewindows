@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="340px"
+    android:padding="20px"
+    android:background="@drawable/touch_bg"
+    android:clickable="true"
+    android:focusable="true"
+    >
+
+    <FrameLayout
+        android:layout_width="210px"
+        android:layout_height="300px"
+        android:elevation="20dp"
+        >
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_movie_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:roundedCornerRadius="5px"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#55000000"
+            android:elevation="20dp"
+            android:paddingLeft="10px"
+            android:paddingRight="10px"
+            android:paddingTop="5px"
+            android:paddingBottom="5px"
+            >
+            <TextView
+                android:id="@+id/tv_rank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/textSize"
+                android:textColor="@color/white"
+                android:layout_alignParentLeft="true"
+                />
+
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20px"
+        >
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/title_text_size"
+            android:textColor="#000"
+            />
+        
+        <TextView
+            android:id="@+id/tv_year"
+            android:layout_below="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textSize"
+            android:layout_marginTop="30px"
+            />
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_below="@+id/tv_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textSize"
+            android:layout_marginTop="28px"
+            />
+
+        <TextView
+            android:id="@+id/tv_directors"
+            android:layout_below="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textSize"
+            android:layout_marginTop="28px"
+            />
+
+        <TextView
+            android:id="@+id/tv_casts"
+            android:layout_below="@+id/tv_directors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textSize"
+            android:layout_marginTop="28px"
+            />
+        
+    </RelativeLayout>
+
+</LinearLayout>

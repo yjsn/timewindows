@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.singgo.cn.timewindows.widget.MySwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sw_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    >
+
+<com.singgo.cn.timewindows.widget.MyScrollView
+    android:id="@+id/sv_movie"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:background="@color/bgcolor"
+    android:visibility="gone"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="240px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="30px"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10px"
+                >
+                <ImageView
+                    android:id="@+id/iv_rm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_group_work_yellow_500_36dp"
+                    />
+                <TextView
+                    android:layout_toRightOf="@+id/iv_rm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="正在热映"
+                    android:textColor="#333"
+                    android:layout_marginTop="15px"
+                    android:textSize="36px"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_more_rm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20px"
+                    android:text="查看更多"
+                    android:textColor="#999"
+                    android:textSize="32px"
+                    android:layout_marginRight="30px"
+                    />
+
+            </RelativeLayout>
+        <com.singgo.cn.timewindows.base.BaseRecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10px"
+                >
+                <ImageView
+                    android:id="@+id/iv_soon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_group_work_yellow_500_36dp"
+                    />
+                <TextView
+                    android:layout_toRightOf="@+id/iv_soon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="即将上映"
+                    android:textColor="#333"
+                    android:layout_marginTop="15px"
+                    android:textSize="36px"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_more_soon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20px"
+                    android:text="查看更多"
+                    android:textColor="#999"
+                    android:textSize="32px"
+                    android:layout_marginRight="30px"
+                    />
+
+            </RelativeLayout>
+            <com.singgo.cn.timewindows.base.BaseRecyclerView
+                android:id="@+id/recycler_view_soon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10px"
+                >
+                <ImageView
+                    android:id="@+id/iv_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_group_work_yellow_500_36dp"
+                    />
+                <TextView
+                    android:layout_toRightOf="@+id/iv_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="经典电影"
+                    android:textColor="#333"
+                    android:layout_marginTop="15px"
+                    android:textSize="36px"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_more_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20px"
+                    android:text="查看更多"
+                    android:textColor="#999"
+                    android:textSize="32px"
+                    android:layout_marginRight="30px"
+                    />
+
+            </RelativeLayout>
+            <com.singgo.cn.timewindows.base.BaseRecyclerView
+                android:id="@+id/recycler_view_top"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="2000px">-->
+        <!--<com.singgo.cn.timewindows.widget.CenterViewPager-->
+        <!--android:id="@+id/cv_viewpager"-->
+        <!--android:layout_width="680px"-->
+        <!--android:layout_height="750px"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--&gt;-->
+
+        <!--</com.singgo.cn.timewindows.widget.CenterViewPager>-->
+
+        <!--</RelativeLayout>-->
+
+    </LinearLayout>
+</com.singgo.cn.timewindows.widget.MyScrollView>
+</com.singgo.cn.timewindows.widget.MySwipeRefreshLayout>
